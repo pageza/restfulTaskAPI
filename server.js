@@ -15,6 +15,8 @@ app.use(express.static(__dirname + "/client/static"));
 
 //Setting the Express app to accept POST requests
 app.use(express.urlencoded({extended: true}));
+// Setting the app to use json
+app.use(express.json());
 
 //Setting the Express app to use the EJS view enging and setting the directory for the views
 // No EJS will be used for this API
