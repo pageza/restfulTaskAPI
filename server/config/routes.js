@@ -15,7 +15,6 @@ module.exports = (app) => {
     });
 
     app.post('/tasks', (req, res) => {
-        console.log(req);
         tasks.createTask(req,res)
     });
 
